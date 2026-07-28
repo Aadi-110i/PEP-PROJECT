@@ -334,3 +334,32 @@ Contributions are welcome!
 ## License
 
 MIT — see [LICENSE](LICENSE) for details.
+
+## Python Analytics Phase
+
+In addition to the SQL-native implementation, this project features a Python analytics layer to extract actionable business insights from the logs.
+
+### Features
+- **Data Cleaning:** Extracts data from the DB to Pandas DataFrames and processes datetime features, categorical standardizations, and burst detection.
+- **EDA & KPIs:** Automatically calculates violation rates, block rates, and tracks top offenders via `eda.py` and `kpi_analysis.py`.
+- **Visualizations:** Generates automated trend charts and breakdown distributions (`visualization.py`).
+
+### How to Run
+1. Navigate to the project root and install requirements:
+   \\\ash
+   pip install -r requirements.txt
+   \\\
+2. Configure credentials:
+   Copy `.env.example` to `.env` and fill in your DB connection details.
+3. Run the pipeline in order:
+   \\\ash
+   python Python/db_connection.py
+   python Python/data_cleaning.py
+   python Python/eda.py
+   python Python/kpi_analysis.py
+   python Python/visualization.py
+   \\\
+4. Output results will be placed in `Data/cleaned/`, `Output/Charts/`, and `Output/Results/`.
+
+### Insights Report
+Check out the [Project Report](Reports/project_report.md) for detailed observations, business impact analysis, and technical recommendations.
