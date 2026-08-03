@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureAPI Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-logo">
+            <h2>🛡️ SecureAPI</h2>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#" data-target="view-overview" class="nav-link active">Overview</a></li>
+            <li><a href="#" data-target="view-traffic" class="nav-link">Traffic Explorer</a></li>
+            <li><a href="#" data-target="view-abuse" class="nav-link">Abuse Detection</a></li>
+            <li><a href="#" data-target="view-settings" class="nav-link">Settings</a></li>
+        </ul>
+        
+        <div class="topbar-actions">
+            <div class="status">🟢 Active</div>
+            <button id="seedBtn" class="btn-primary">Initialize & Seed</button>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <!-- View 1: Overview -->
+        <div id="view-overview" class="view active">
+            <h1>API Abuse & Rate Limiting Dashboard</h1>
+            
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-label">Total Requests (24h)</div>
+                    <div class="kpi-value" id="kpiTotal">0</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Block Rate</div>
+                    <div class="kpi-value" id="kpiBlock">0%</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Avg Response</div>
+                    <div class="kpi-value" id="kpiAvg">0 ms</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Active Threats</div>
+                    <div class="kpi-value" id="kpiThreats">0</div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>Live Traffic Volume Analysis</h2>
+                <canvas id="trafficChart"></canvas>
+            </div>
+        </div>
+
+        <!-- View 2: Traffic Explorer -->
+        <div id="view-traffic" class="view">
+            <h1>Traffic Explorer</h1>
+            <div class="table-container">
+                <table id="logsTable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>IP Address</th>
+                            <th>Endpoint</th>
+                            <th>Status</th>
+                            <th>Decision</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- View 3: Abuse Detection -->
+        <div id="view-abuse" class="view">
+            <h1>Abuse Detection</h1>
+            <div class="table-container">
+                <h2>🚨 Flagged Abusers</h2>
+                <table id="abuseTable">
+                    <thead>
+                        <tr>
+                            <th>IP Address</th>
+                            <th>Risk Tier</th>
+                            <th>Score</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- View 4: Settings -->
+        <div id="view-settings" class="view">
+            <h1>Settings</h1>
+            <div class="chart-container" style="max-width: 500px; margin-top: 50px;">
+                <h2>Rate Limit Configuration</h2>
+                <div class="form-group">
+                    <label>Max Requests Per Minute (RPM)</label>
+                    <input type="number" id="rpmInput" value="60">
+                </div>
+                <button id="saveSettingsBtn" class="btn-primary" style="margin-top:20px; width:100%;">Save Changes</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

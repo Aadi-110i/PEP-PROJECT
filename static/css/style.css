@@ -1,0 +1,115 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column; /* Changed from row to column for topbar */
+    min-height: 100vh;
+}
+
+/* Topbar replacing Sidebar */
+.topbar {
+    width: 100%;
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.topbar h2 { color: #00D9FF; margin-bottom: 0; }
+.topbar-actions { display: flex; align-items: center; gap: 20px; }
+.status { color: #3DDC84; font-weight: 600; margin-bottom: 0; }
+
+/* Topbar Nav */
+.nav-links { list-style: none; display: flex; gap: 15px; margin-bottom: 0; }
+.nav-links a { 
+    color: #94a3b8; 
+    text-decoration: none; 
+    font-weight: 600; 
+    padding: 10px 20px; 
+    display: block; 
+    border-radius: 8px; 
+    transition: 0.3s;
+}
+.nav-links a:hover { background: rgba(255,255,255,0.05); color: #f8fafc; }
+.nav-links a.active { background: rgba(0,217,255,0.1); color: #00D9FF; }
+
+/* Views */
+.view { display: none; }
+.view.active { display: block; animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from {opacity: 0; transform: translateY(5px);} to {opacity: 1; transform: translateY(0);} }
+
+.btn-primary {
+    background: linear-gradient(135deg, #00D9FF 0%, #3b82f6 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.25);
+    transition: all 0.3s ease;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0, 217, 255, 0.4); }
+
+/* Main Content & KPIs */
+.main-content { padding: 40px; overflow-y: auto; flex: 1; }
+h1 {
+    background: -webkit-linear-gradient(45deg, #00D9FF, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    margin-bottom: 50px; /* Increased margin to push KPIs lower */
+    font-weight: 800;
+}
+.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 50px; margin-top: 20px; }
+.kpi-card {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, border-color 0.3s;
+}
+.kpi-card:hover { transform: translateY(-5px); border-color: rgba(0, 217, 255, 0.4); }
+.kpi-label { color: #94a3b8; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px;}
+.kpi-value { color: #00D9FF; font-size: 2.5rem; font-weight: 700; text-shadow: 0 2px 10px rgba(0,217,255,0.2); }
+
+.chart-container, .table-container {
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+    backdrop-filter: blur(10px);
+}
+h2 { margin-bottom: 20px; font-weight: 600; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 15px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.05); }
+th { color: #94a3b8; text-transform: uppercase; font-size: 0.85rem; }
+.tier-Critical { color: #FF4B5C; font-weight: bold; }
+.tier-High { color: #FFB020; font-weight: bold; }
+.tier-Medium { color: #f59e0b; font-weight: bold; }
+.tier-Low { color: #00D9FF; font-weight: bold; }
+.decision-blocked { color: #FF4B5C; font-weight: bold; }
+.decision-allowed { color: #3DDC84; font-weight: bold; }
+
+/* Forms */
+.form-group label { display: block; margin-bottom: 8px; color: #94a3b8; font-weight: 600;}
+.form-group input { 
+    width: 100%; 
+    padding: 12px; 
+    border-radius: 8px; 
+    border: 1px solid rgba(255,255,255,0.2); 
+    background: rgba(15,23,42,0.8);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.form-group input:focus { outline: none; border-color: #00D9FF; }

@@ -1,0 +1,1016 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-05-01T09:56:15.731Z",
+      "updatedAt": "2026-06-23T07:23:09.447Z"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "skillFolderHash": "516bd2154eb843a8240e43d5b285229129853114ad7075a5e141e1c08e408c84",
+      "pluginName": "example-skills",
+      "installedAt": "2026-05-01T09:58:05.848Z",
+      "updatedAt": "2026-05-09T11:27:25.844Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-05-01T09:58:28.134Z",
+      "updatedAt": "2026-06-23T07:22:09.356Z"
+    },
+    "pptx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/pptx/SKILL.md",
+      "skillFolderHash": "10b3d70962e489867ddfee7da92f7da6b0eccc4f",
+      "pluginName": "document-skills",
+      "installedAt": "2026-05-01T10:00:02.459Z",
+      "updatedAt": "2026-05-01T10:00:02.459Z"
+    },
+    "3d-web-experience": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sickn33/antigravity-awesome-skills.git",
+      "skillPath": "skills/3d-web-experience/SKILL.md",
+      "skillFolderHash": "87c4b32078381ee1e6df164ddd5c28dd67fc7552431a7415626e63b8cf74b11a",
+      "installedAt": "2026-05-01T10:28:58.897Z",
+      "updatedAt": "2026-05-01T10:28:58.897Z"
+    },
+    "ai-image-generation": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/image/ai-image-generation/SKILL.md",
+      "skillFolderHash": "c3422219915efc1d9c3bb72378b48c9ce61598501a81398c3412a5a58b161bed",
+      "installedAt": "2026-05-01T10:34:02.791Z",
+      "updatedAt": "2026-05-08T10:43:05.491Z"
+    },
+    "patent-application-creator": {
+      "source": "robthepcguy/claude-patent-creator",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/robthepcguy/claude-patent-creator.git",
+      "skillPath": "skills/patent-application-creator/SKILL.md",
+      "skillFolderHash": "b1b0952e82ee0706a7f44183511d7cd03b6954d783449bd4c1948e6a459b7253",
+      "installedAt": "2026-05-01T10:48:12.002Z",
+      "updatedAt": "2026-05-05T05:01:50.980Z"
+    },
+    "threejs-fundamentals": {
+      "source": "cloudai-x/threejs-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cloudai-x/threejs-skills.git",
+      "skillPath": "skills/threejs-fundamentals/SKILL.md",
+      "skillFolderHash": "918e26abdcc434d3ef7563043a25a97a6209b411",
+      "installedAt": "2026-05-04T06:02:06.035Z",
+      "updatedAt": "2026-05-04T06:02:06.035Z"
+    },
+    "threejs-skills": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sickn33/antigravity-awesome-skills.git",
+      "skillPath": "skills/threejs-skills/SKILL.md",
+      "skillFolderHash": "447ebdba2f94d879348cccb4023bfa5a23ffcf287d7f39ee757da466ee46dcbb",
+      "installedAt": "2026-05-04T06:02:51.837Z",
+      "updatedAt": "2026-05-04T06:02:51.837Z"
+    },
+    "threejs-animation": {
+      "source": "cloudai-x/threejs-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cloudai-x/threejs-skills.git",
+      "skillPath": "skills/threejs-animation/SKILL.md",
+      "skillFolderHash": "0e5c91a99a4838307f8a46d8178d6cd2e0fd3af0",
+      "installedAt": "2026-05-04T06:03:22.933Z",
+      "updatedAt": "2026-05-04T06:03:22.933Z"
+    },
+    "threejs-geometry": {
+      "source": "cloudai-x/threejs-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cloudai-x/threejs-skills.git",
+      "skillPath": "skills/threejs-geometry/SKILL.md",
+      "skillFolderHash": "a8b8defe755f4505ac0258863e05727e37ce056f",
+      "installedAt": "2026-05-04T06:03:51.645Z",
+      "updatedAt": "2026-05-04T06:03:51.645Z"
+    },
+    "threejs-postprocessing": {
+      "source": "cloudai-x/threejs-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cloudai-x/threejs-skills.git",
+      "skillPath": "skills/threejs-postprocessing/SKILL.md",
+      "skillFolderHash": "95c3952afb0f1164253e013cce0c1cb1c290b17e3cbdc3583379bd4c66ca2870",
+      "installedAt": "2026-05-04T06:07:22.175Z",
+      "updatedAt": "2026-05-04T06:07:22.175Z"
+    },
+    "patent-diagram-generator": {
+      "source": "robthepcguy/claude-patent-creator",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/robthepcguy/claude-patent-creator.git",
+      "skillPath": "skills/patent-diagram-generator/SKILL.md",
+      "skillFolderHash": "92e8904ab132bc9f18c36daf6846836e5a0701f13b1092913a84070fa1b1f250",
+      "installedAt": "2026-05-05T04:57:51.403Z",
+      "updatedAt": "2026-05-05T04:57:51.403Z"
+    },
+    "patent-drafting": {
+      "source": "omer-metin/skills-for-antigravity",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/omer-metin/skills-for-antigravity.git",
+      "skillPath": "skills/patent-drafting/SKILL.md",
+      "skillFolderHash": "616d0baafe2c20faafc3b3dc8e96202a959b6729",
+      "installedAt": "2026-05-05T05:00:13.321Z",
+      "updatedAt": "2026-05-05T05:00:13.321Z"
+    },
+    "humanizer-zh": {
+      "source": "op7418/humanizer-zh",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/op7418/humanizer-zh.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "ad6b2b1f1433413c64f6403dc322d950da175a058f494291bd4399e77cb587c7",
+      "installedAt": "2026-05-05T05:02:03.260Z",
+      "updatedAt": "2026-05-05T05:02:03.260Z"
+    },
+    "gpt-image-2": {
+      "source": "agentspace-so/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/agentspace-so/agent-skills.git",
+      "skillPath": "gpt-image-2/SKILL.md",
+      "skillFolderHash": "d539380caff7d3ec09ddc8ce7cac4f031e54689d466c3dd5cf2850419f56b969",
+      "installedAt": "2026-05-08T10:07:20.489Z",
+      "updatedAt": "2026-05-08T10:37:39.047Z"
+    },
+    "baoyu-image-gen": {
+      "source": "jimliu/baoyu-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/jimliu/baoyu-skills.git",
+      "skillPath": "skills/baoyu-image-gen/SKILL.md",
+      "skillFolderHash": "2da7366ea9fb708ee4ef34b705796cd87a54a5b85e10d55e530064e71294ea61",
+      "installedAt": "2026-05-08T10:08:59.305Z",
+      "updatedAt": "2026-05-08T10:08:59.305Z"
+    },
+    "ai-automation-workflows": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/content/ai-automation-workflows/SKILL.md",
+      "skillFolderHash": "b09c11e0ff70daffdfc1df5058b2972f9ee831046f8cc413777e0d32f170786d",
+      "installedAt": "2026-05-08T10:33:54.493Z",
+      "updatedAt": "2026-05-08T10:43:05.002Z"
+    },
+    "ai-content-pipeline": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/content/ai-content-pipeline/SKILL.md",
+      "skillFolderHash": "3dd3f6733d3c6e3caf3b42ba7e709ba40db0b8faab8fe22e0dc7813effcfaf52",
+      "installedAt": "2026-05-08T10:33:54.498Z",
+      "updatedAt": "2026-05-08T10:43:05.013Z"
+    },
+    "ai-podcast-creation": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/content/ai-podcast-creation/SKILL.md",
+      "skillFolderHash": "d93b563ac9c1c1ef41b8dde67c59582646554de9c95d0e5e261f7dcada5af016",
+      "installedAt": "2026-05-08T10:33:54.500Z",
+      "updatedAt": "2026-05-08T10:43:05.017Z"
+    },
+    "content-repurposing": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/content/content-repurposing/SKILL.md",
+      "skillFolderHash": "1be8775119713d4fca479b50b9cae2076ba602e91628a956df6e7dfa63d659c6",
+      "installedAt": "2026-05-08T10:33:54.504Z",
+      "updatedAt": "2026-05-08T10:43:05.020Z"
+    },
+    "app-store-screenshots": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/design/app-store-screenshots/SKILL.md",
+      "skillFolderHash": "40ab555a8d87eb751507a5d333acbfea639a405c7fea9713d1606cda5d041bfd",
+      "installedAt": "2026-05-08T10:33:54.506Z",
+      "updatedAt": "2026-05-08T10:43:05.028Z"
+    },
+    "book-cover-design": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/design/book-cover-design/SKILL.md",
+      "skillFolderHash": "bd93b40aac718a7b45eec84c7b0376fa7e783b485e8a5fe53392c5dd8865659f",
+      "installedAt": "2026-05-08T10:33:54.508Z",
+      "updatedAt": "2026-05-08T10:43:05.034Z"
+    },
+    "character-design-sheet": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/design/character-design-sheet/SKILL.md",
+      "skillFolderHash": "f8f41160f38e1f1cbce4dfc3bbd5849b39a9f6f870d0950ea0a062ec653f943f",
+      "installedAt": "2026-05-08T10:33:54.510Z",
+      "updatedAt": "2026-05-08T10:43:05.039Z"
+    },
+    "data-visualization": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/design/data-visualization/SKILL.md",
+      "skillFolderHash": "b7b6d607390f38eb82eace9906f1950a5457ce19eb1a42476726cb6db99bab77",
+      "installedAt": "2026-05-08T10:33:54.512Z",
+      "updatedAt": "2026-05-08T10:43:05.047Z"
+    },
+    "email-design": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/design/email-design/SKILL.md",
+      "skillFolderHash": "ba509c9ad0cad8dc9d9326b6b768374e1ecdf6f16e3405fe044f0f319774b486",
+      "installedAt": "2026-05-08T10:33:54.514Z",
+      "updatedAt": "2026-05-08T10:43:05.052Z"
+    },
+    "landing-page-design": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/design/landing-page-design/SKILL.md",
+      "skillFolderHash": "d9194d6a3cd823ed41ebb3647294837aa8952106693b90aa5d7af0a019cce922",
+      "installedAt": "2026-05-08T10:33:54.516Z",
+      "updatedAt": "2026-05-08T10:43:05.059Z"
+    },
+    "logo-design-guide": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/design/logo-design-guide/SKILL.md",
+      "skillFolderHash": "83a7ce9af8f6ba1bdc74d07d8404aca3b7fde4d106416eb12cd904a6bbe49166",
+      "installedAt": "2026-05-08T10:33:54.518Z",
+      "updatedAt": "2026-05-08T10:43:05.063Z"
+    },
+    "og-image-design": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/design/og-image-design/SKILL.md",
+      "skillFolderHash": "70435867ba4bd425858cb903ae122cd3f368c9bf1edffa205fd76c92c9bbd3f7",
+      "installedAt": "2026-05-08T10:33:54.520Z",
+      "updatedAt": "2026-05-08T10:43:05.070Z"
+    },
+    "pitch-deck-visuals": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/design/pitch-deck-visuals/SKILL.md",
+      "skillFolderHash": "856041bcf44f190107580ef3ea6114d3eeefa5cf5c8aaf5620458a04156206c0",
+      "installedAt": "2026-05-08T10:33:54.524Z",
+      "updatedAt": "2026-05-08T10:43:05.077Z"
+    },
+    "youtube-thumbnail-design": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/design/youtube-thumbnail-design/SKILL.md",
+      "skillFolderHash": "4505485a6e01cca414f14d9c8080ca4832de20d9642650c8788ba1de447d73dd",
+      "installedAt": "2026-05-08T10:33:54.527Z",
+      "updatedAt": "2026-05-08T10:43:05.082Z"
+    },
+    "ai-product-photography": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/photo/ai-product-photography/SKILL.md",
+      "skillFolderHash": "e938ffdb01c692afca0eb2810951d07dafe42fe9de869e7a13ee407d9a9e5c3c",
+      "installedAt": "2026-05-08T10:33:54.530Z",
+      "updatedAt": "2026-05-08T10:43:05.089Z"
+    },
+    "product-photography": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/photo/product-photography/SKILL.md",
+      "skillFolderHash": "eca125e7971807d271b4355bf9b802030738cbb1c9aa5f7bcaf9f19117b9db19",
+      "installedAt": "2026-05-08T10:33:54.533Z",
+      "updatedAt": "2026-05-08T10:43:05.096Z"
+    },
+    "competitor-teardown": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/product/competitor-teardown/SKILL.md",
+      "skillFolderHash": "ef5d070b2e7266f854923ba18aae06778dc76eb8df45148e40c88a6efa6d8ebe",
+      "installedAt": "2026-05-08T10:33:54.536Z",
+      "updatedAt": "2026-05-08T10:43:05.106Z"
+    },
+    "customer-persona": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/product/customer-persona/SKILL.md",
+      "skillFolderHash": "d405bb6e0fc395e75c3a5c97ddb5f9d96572c8cd5b221e50af93b958d8fc95ee",
+      "installedAt": "2026-05-08T10:33:54.538Z",
+      "updatedAt": "2026-05-08T10:43:05.131Z"
+    },
+    "product-changelog": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/product/product-changelog/SKILL.md",
+      "skillFolderHash": "15fd41f2ab1b25253034534405c5855fb7021b73e3a845692cc147637be44f5c",
+      "installedAt": "2026-05-08T10:33:54.541Z",
+      "updatedAt": "2026-05-08T10:43:05.201Z"
+    },
+    "product-hunt-launch": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/product/product-hunt-launch/SKILL.md",
+      "skillFolderHash": "e9b61f72145cf4a8c967e926192a3922d3d5ef0b136a4ec1758c58eb4ee8613a",
+      "installedAt": "2026-05-08T10:33:54.544Z",
+      "updatedAt": "2026-05-08T10:43:05.208Z"
+    },
+    "prompt-engineering": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/prompting/prompt-engineering/SKILL.md",
+      "skillFolderHash": "652b9a9f7092c45d175310497d14958c6243286dc4140f14dd8fc824e8d93001",
+      "installedAt": "2026-05-08T10:33:54.546Z",
+      "updatedAt": "2026-05-08T10:43:05.214Z"
+    },
+    "video-prompting-guide": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/prompting/video-prompting-guide/SKILL.md",
+      "skillFolderHash": "d1150085dbfb41aee40f8b95871eba6e8c53816ac5ce4cc483e30df641c9324d",
+      "installedAt": "2026-05-08T10:33:54.549Z",
+      "updatedAt": "2026-05-08T10:43:05.218Z"
+    },
+    "ai-social-media-content": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/social/ai-social-media-content/SKILL.md",
+      "skillFolderHash": "8b1928605814b934273c6be47146ea93777e8e811cc001e745e6ffa1f56e44b5",
+      "installedAt": "2026-05-08T10:33:54.551Z",
+      "updatedAt": "2026-05-08T10:43:05.222Z"
+    },
+    "linkedin-content": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/social/linkedin-content/SKILL.md",
+      "skillFolderHash": "5774cb551b4b198982d2d5391ab41e7c23de3c36701154d1dcff97cdede2e774",
+      "installedAt": "2026-05-08T10:33:54.555Z",
+      "updatedAt": "2026-05-08T10:43:05.227Z"
+    },
+    "social-media-carousel": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/social/social-media-carousel/SKILL.md",
+      "skillFolderHash": "26a2cbcc4194650b8f358423f216a29164be3a18fbae8279766caf154885079e",
+      "installedAt": "2026-05-08T10:33:54.557Z",
+      "updatedAt": "2026-05-08T10:43:05.231Z"
+    },
+    "twitter-thread-creation": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/social/twitter-thread-creation/SKILL.md",
+      "skillFolderHash": "429bcd548b54dc2183014e3140ff86701a8f4c9d02d9a7cc6f01a3a3e9889ba8",
+      "installedAt": "2026-05-08T10:33:54.559Z",
+      "updatedAt": "2026-05-08T10:43:05.234Z"
+    },
+    "ai-marketing-videos": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/video/ai-marketing-videos/SKILL.md",
+      "skillFolderHash": "7e367d6030d16cfe234a64d703f8dfe75e8a4df10baae9f888301e3f7b3fbc71",
+      "installedAt": "2026-05-08T10:33:54.562Z",
+      "updatedAt": "2026-05-08T10:43:05.238Z"
+    },
+    "explainer-video-guide": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/video/explainer-video-guide/SKILL.md",
+      "skillFolderHash": "ff7679e8718cb357f1a2cc4754b812ee92f9b77e5c9a86c500930bbfc497dfd7",
+      "installedAt": "2026-05-08T10:33:54.564Z",
+      "updatedAt": "2026-05-08T10:43:05.245Z"
+    },
+    "storyboard-creation": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/video/storyboard-creation/SKILL.md",
+      "skillFolderHash": "f22d62ecd9c6a3638353b98df2acf7bdce7d2ccf2eba1f9fd295bd538cc74d66",
+      "installedAt": "2026-05-08T10:33:54.566Z",
+      "updatedAt": "2026-05-08T10:43:05.249Z"
+    },
+    "talking-head-production": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/video/talking-head-production/SKILL.md",
+      "skillFolderHash": "1dc9486d524d7e1462d6040b1b4ea5d5b142bf501c5f6fef79d22aec1498e76f",
+      "installedAt": "2026-05-08T10:33:54.568Z",
+      "updatedAt": "2026-05-08T10:43:05.252Z"
+    },
+    "video-ad-specs": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/video/video-ad-specs/SKILL.md",
+      "skillFolderHash": "034013f9e107d51fa0fb5e9b0935995b1aeb15b81ed6e8422b51cec8f1d49b4e",
+      "installedAt": "2026-05-08T10:33:54.571Z",
+      "updatedAt": "2026-05-08T10:43:05.256Z"
+    },
+    "case-study-writing": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/writing/case-study-writing/SKILL.md",
+      "skillFolderHash": "881d71690925429f8651eadadb19ace233bec94e47c4bb190a3d06c58bef4f84",
+      "installedAt": "2026-05-08T10:33:54.573Z",
+      "updatedAt": "2026-05-08T10:43:05.260Z"
+    },
+    "newsletter-curation": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/writing/newsletter-curation/SKILL.md",
+      "skillFolderHash": "f73a97e08f5162a3135b287269a0ba7e17abe4a0c75af479e730ba4c82f5192e",
+      "installedAt": "2026-05-08T10:33:54.575Z",
+      "updatedAt": "2026-05-08T10:43:05.264Z"
+    },
+    "press-release-writing": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/writing/press-release-writing/SKILL.md",
+      "skillFolderHash": "f68a91907738bbf0b9964ef3fa39b68cadc04567ed9797cd1c30186e04ca2f93",
+      "installedAt": "2026-05-08T10:33:54.578Z",
+      "updatedAt": "2026-05-08T10:43:05.269Z"
+    },
+    "seo-content-brief": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/writing/seo-content-brief/SKILL.md",
+      "skillFolderHash": "47d43ee62f2ce1927a3b4780f27f9baff91433c0000d3bd17762f26b55ebcf3a",
+      "installedAt": "2026-05-08T10:33:54.579Z",
+      "updatedAt": "2026-05-08T10:43:05.274Z"
+    },
+    "technical-blog-writing": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "guides/writing/technical-blog-writing/SKILL.md",
+      "skillFolderHash": "a3752a96c4c874827b5652c8e182030937f651fc6ef34d0a4497a8a69aa62605",
+      "installedAt": "2026-05-08T10:33:54.582Z",
+      "updatedAt": "2026-05-08T10:43:05.278Z"
+    },
+    "building-inferencesh-apps": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "sdk/building-apps/SKILL.md",
+      "skillFolderHash": "50be12614ceaf2bc4bff4e60abdbc8e8e8cd9c6f32317d631896586bcaa41ecd",
+      "installedAt": "2026-05-08T10:33:54.601Z",
+      "updatedAt": "2026-05-08T10:43:05.338Z"
+    },
+    "javascript-sdk": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "sdk/javascript-sdk/SKILL.md",
+      "skillFolderHash": "0eca0253a51bace0b108c7d591b5f1836b103d413b25cc45359b33bb3bf7e00d",
+      "installedAt": "2026-05-08T10:33:54.605Z",
+      "updatedAt": "2026-05-08T10:43:05.346Z"
+    },
+    "python-sdk": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "sdk/python-sdk/SKILL.md",
+      "skillFolderHash": "2e4da48467872c95277ccd3cb982a0eb6f398e20751ecbd26f8e470cafb7183f",
+      "installedAt": "2026-05-08T10:33:54.609Z",
+      "updatedAt": "2026-05-08T10:43:05.369Z"
+    },
+    "agent-tools": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/agent-tools/SKILL.md",
+      "skillFolderHash": "318c6c818b424fb522de4b0434713b7f363d7a33317f2f3e2057b55d7433f067",
+      "installedAt": "2026-05-08T10:33:54.612Z",
+      "updatedAt": "2026-05-08T10:43:05.411Z"
+    },
+    "ai-music-generation": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/ai-music-generation/SKILL.md",
+      "skillFolderHash": "90faad4dc1e76dd5178876137beb81c79bfe9e66a3bfb0d109f6b52fc3c34d6e",
+      "installedAt": "2026-05-08T10:33:54.614Z",
+      "updatedAt": "2026-05-08T10:43:05.420Z"
+    },
+    "ai-voice-cloning": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/ai-voice-cloning/SKILL.md",
+      "skillFolderHash": "7747d3b31b249a69f76e3f39f610af957c77c475b353d32a4312ade8bf8d1d3d",
+      "installedAt": "2026-05-08T10:33:54.617Z",
+      "updatedAt": "2026-05-08T10:43:05.444Z"
+    },
+    "dialogue-audio": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/dialogue-audio/SKILL.md",
+      "skillFolderHash": "33485d70bff27ebf42617e8c55f15f1eb819654d4b0b4c38ae7aba1454e7d2cc",
+      "installedAt": "2026-05-08T10:33:54.620Z",
+      "updatedAt": "2026-05-08T10:43:05.453Z"
+    },
+    "elevenlabs-dialogue": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/elevenlabs-dialogue/SKILL.md",
+      "skillFolderHash": "bd99307b273a7cfefc15d1d643bbe93f7cc55b757dc6510c85568da39e346023",
+      "installedAt": "2026-05-08T10:33:54.622Z",
+      "updatedAt": "2026-05-08T10:43:05.459Z"
+    },
+    "elevenlabs-dubbing": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/elevenlabs-dubbing/SKILL.md",
+      "skillFolderHash": "fb53879fee15b2f005dac7136909dc07436ba1a7321ffdd6aa25794330791f03",
+      "installedAt": "2026-05-08T10:33:54.624Z",
+      "updatedAt": "2026-05-08T10:43:05.462Z"
+    },
+    "elevenlabs-music": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/elevenlabs-music/SKILL.md",
+      "skillFolderHash": "c517d11355ec8b9b5adbf408ee884f42651ad30c4bddeab11f228e7f91a74553",
+      "installedAt": "2026-05-08T10:33:54.626Z",
+      "updatedAt": "2026-05-08T10:43:05.466Z"
+    },
+    "elevenlabs-sound-effects": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/elevenlabs-sound-effects/SKILL.md",
+      "skillFolderHash": "d1b2e939cb9c9a79761a74268d9f2ead5550f0e9c7bc0b272d5f9573ab1f57f0",
+      "installedAt": "2026-05-08T10:33:54.628Z",
+      "updatedAt": "2026-05-08T10:43:05.468Z"
+    },
+    "elevenlabs-stt": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/elevenlabs-stt/SKILL.md",
+      "skillFolderHash": "4f4c492a218bbf40a64d32df569406f67430d78c1a7c11c234256958aa15d942",
+      "installedAt": "2026-05-08T10:33:54.629Z",
+      "updatedAt": "2026-05-08T10:43:05.472Z"
+    },
+    "elevenlabs-tts": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/elevenlabs-tts/SKILL.md",
+      "skillFolderHash": "e775324153417082d998a6da00470b9515ff6d0811e82f2e4bda1f08eafdfce6",
+      "installedAt": "2026-05-08T10:33:54.632Z",
+      "updatedAt": "2026-05-08T10:43:05.475Z"
+    },
+    "elevenlabs-voice-changer": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/elevenlabs-voice-changer/SKILL.md",
+      "skillFolderHash": "7388d710ac2295c6b3d188bd5758ccdbeeb20b259bacdd199c3becb533724385",
+      "installedAt": "2026-05-08T10:33:54.635Z",
+      "updatedAt": "2026-05-08T10:43:05.478Z"
+    },
+    "elevenlabs-voice-isolator": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/elevenlabs-voice-isolator/SKILL.md",
+      "skillFolderHash": "dd9e5269855dd9be41e63a409ddf5b84c1682882dd8a5f69057c027723e61296",
+      "installedAt": "2026-05-08T10:33:54.638Z",
+      "updatedAt": "2026-05-08T10:43:05.481Z"
+    },
+    "speech-to-text": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/speech-to-text/SKILL.md",
+      "skillFolderHash": "86c4ac57f31915f80d7c15ad919abbff4f32da63c4c0206d559951f453011238",
+      "installedAt": "2026-05-08T10:33:54.640Z",
+      "updatedAt": "2026-05-08T10:43:05.484Z"
+    },
+    "text-to-speech": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/audio/text-to-speech/SKILL.md",
+      "skillFolderHash": "f8f4911070b3c3cd50d6bfea8c8f350246c6443620864ec4c5b202f502dfe2f0",
+      "installedAt": "2026-05-08T10:33:54.642Z",
+      "updatedAt": "2026-05-08T10:43:05.487Z"
+    },
+    "background-removal": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/image/background-removal/SKILL.md",
+      "skillFolderHash": "1fecc9661e88242883e4eb5e84a547bc22dac4e44d5aa343b6ce7cf2e71c06bc",
+      "installedAt": "2026-05-08T10:33:54.647Z",
+      "updatedAt": "2026-05-08T10:43:05.495Z"
+    },
+    "flux-image": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/image/flux-image/SKILL.md",
+      "skillFolderHash": "dd88021728f3a38c03357ddec90abaabd335bec3bd0ff026072b74894b6c3257",
+      "installedAt": "2026-05-08T10:33:54.648Z",
+      "updatedAt": "2026-05-08T10:43:05.498Z"
+    },
+    "gpt-image": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/image/gpt-image/SKILL.md",
+      "skillFolderHash": "36b06e4c50228b63d572ce39b6dab0f10929c862f9f8943b9929e8b5d4e7d82b",
+      "installedAt": "2026-05-08T10:33:54.651Z",
+      "updatedAt": "2026-05-08T10:43:05.501Z"
+    },
+    "image-upscaling": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/image/image-upscaling/SKILL.md",
+      "skillFolderHash": "23cdf36740bb16dfb611b0a9f36434ab7544a06b592b5fa15af7ecd07febe36c",
+      "installedAt": "2026-05-08T10:33:54.653Z",
+      "updatedAt": "2026-05-08T10:43:05.506Z"
+    },
+    "nano-banana": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/image/nano-banana/SKILL.md",
+      "skillFolderHash": "ce8caac8280a8ee2afaf11e2ab2b9bb765f5c6dd04c1db3d0b72e5e885bbb13c",
+      "installedAt": "2026-05-08T10:33:54.655Z",
+      "updatedAt": "2026-05-08T10:43:05.509Z"
+    },
+    "nano-banana-2": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/image/nano-banana-2/SKILL.md",
+      "skillFolderHash": "53c218982b4e3773f7b829522eadf1c95a80182a8ed4e408a3f2f293745a015d",
+      "installedAt": "2026-05-08T10:33:54.656Z",
+      "updatedAt": "2026-05-08T10:43:05.513Z"
+    },
+    "p-image": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/image/p-image/SKILL.md",
+      "skillFolderHash": "8ee3ea84de76c86f928646ede60acc9c7cc4cef3fb5498320a9c871b3457719a",
+      "installedAt": "2026-05-08T10:33:54.658Z",
+      "updatedAt": "2026-05-08T10:43:05.523Z"
+    },
+    "qwen-image-2": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/image/qwen-image-2/SKILL.md",
+      "skillFolderHash": "ca9a612faaef6948a3dd7f6cfd12dd9a9cb97fb361413c2e338493c067614fe3",
+      "installedAt": "2026-05-08T10:33:54.661Z",
+      "updatedAt": "2026-05-08T10:43:05.527Z"
+    },
+    "qwen-image-2-pro": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/image/qwen-image-2-pro/SKILL.md",
+      "skillFolderHash": "13e79a35248162959b8849d3e421a88744a0c2025e7d4898b76a59436afb22d6",
+      "installedAt": "2026-05-08T10:33:54.663Z",
+      "updatedAt": "2026-05-08T10:43:05.531Z"
+    },
+    "infsh-cli": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/infsh-cli/SKILL.md",
+      "skillFolderHash": "69a3321aefbe2eff28b7dfff7aad751c13aa5dab97258cae75f75b2e1ea8ca4e",
+      "installedAt": "2026-05-08T10:33:54.665Z",
+      "updatedAt": "2026-05-08T10:43:05.535Z"
+    },
+    "ai-rag-pipeline": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/llm/ai-rag-pipeline/SKILL.md",
+      "skillFolderHash": "e6dba94c08de49836db9393a2e1a4420d1ad8efdfad07259d867b1cf23dc6ba9",
+      "installedAt": "2026-05-08T10:33:54.668Z",
+      "updatedAt": "2026-05-08T10:43:05.538Z"
+    },
+    "llm-models": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/llm/llm-models/SKILL.md",
+      "skillFolderHash": "1113380f7dffd48ad579b7956f72ed98b5d8caa0ae845975598b2bf5a04f61bf",
+      "installedAt": "2026-05-08T10:33:54.669Z",
+      "updatedAt": "2026-05-08T10:43:05.542Z"
+    },
+    "web-search": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/llm/web-search/SKILL.md",
+      "skillFolderHash": "ef45da79bbabdfcc87547f3e3d8df8129880056eae9db3a89d242327539eedae",
+      "installedAt": "2026-05-08T10:33:54.671Z",
+      "updatedAt": "2026-05-08T10:43:05.546Z"
+    },
+    "twitter-automation": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/social/twitter-automation/SKILL.md",
+      "skillFolderHash": "442c20e184eb01b58ee656b204197f5284b3e8eda28101d253290a4dcbc709c4",
+      "installedAt": "2026-05-08T10:33:54.673Z",
+      "updatedAt": "2026-05-08T10:43:05.549Z"
+    },
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "skillFolderHash": "9b31e495b887e4ca123960415eca69fc7e1bba28",
+      "installedAt": "2026-05-08T10:33:54.676Z",
+      "updatedAt": "2026-06-23T07:22:15.206Z"
+    },
+    "python-executor": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/utilities/python-executor/SKILL.md",
+      "skillFolderHash": "ac87e82f7c23c0b7af9dd3c12f856c7e26aa175642c6a4a01aec4ac45e5bdb1c",
+      "installedAt": "2026-05-08T10:33:54.679Z",
+      "updatedAt": "2026-05-08T10:43:05.558Z"
+    },
+    "related-skill": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/utilities/related-skill/SKILL.md",
+      "skillFolderHash": "71c58f94454524a14276ec633c96063986317b60af3ea3a7a64586a511ba1187",
+      "installedAt": "2026-05-08T10:33:54.681Z",
+      "updatedAt": "2026-05-08T10:43:05.562Z"
+    },
+    "ai-avatar-video": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/video/ai-avatar-video/SKILL.md",
+      "skillFolderHash": "4f43dc50701be5b41094c15876a6d28c4b670e87639f0a07fb443ca8ada8fda5",
+      "installedAt": "2026-05-08T10:33:54.684Z",
+      "updatedAt": "2026-05-08T10:43:05.565Z"
+    },
+    "ai-video-generation": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/video/ai-video-generation/SKILL.md",
+      "skillFolderHash": "586437842af9fa7a513100b2aeb79e62f9b4acb81dd1b9895da6a452714b78ce",
+      "installedAt": "2026-05-08T10:33:54.686Z",
+      "updatedAt": "2026-05-08T10:43:05.570Z"
+    },
+    "google-veo": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/video/google-veo/SKILL.md",
+      "skillFolderHash": "1bd9a1797baf2cdc9aae29762737ea123ce8792ab2fb6389ba5e6200bc0d57e1",
+      "installedAt": "2026-05-08T10:33:54.689Z",
+      "updatedAt": "2026-05-08T10:43:05.574Z"
+    },
+    "happyhorse": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/video/happyhorse/SKILL.md",
+      "skillFolderHash": "359fa3ba51fa0f079ac218eb56b34e2c1b318e2e54fdc5226c036cbbc81544e4",
+      "installedAt": "2026-05-08T10:33:54.690Z",
+      "updatedAt": "2026-05-08T10:43:05.578Z"
+    },
+    "image-to-video": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/video/image-to-video/SKILL.md",
+      "skillFolderHash": "9e2de5a9c821c8bd97fba1afb844269fd60ec2ce1525d05b2dd91dfed17dc57d",
+      "installedAt": "2026-05-08T10:33:54.693Z",
+      "updatedAt": "2026-05-08T10:43:05.582Z"
+    },
+    "p-video": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/video/p-video/SKILL.md",
+      "skillFolderHash": "abbed33a8ee996b82ed0c803da9d205a713df17a3b9b2d91d9f15f70c05908c5",
+      "installedAt": "2026-05-08T10:33:54.694Z",
+      "updatedAt": "2026-05-08T10:43:05.708Z"
+    },
+    "p-video-avatar": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/video/p-video-avatar/SKILL.md",
+      "skillFolderHash": "67377b3b5e531cfe4b6c1113e2ce63f1200595baac80ce42f7f7fbde77f07b5a",
+      "installedAt": "2026-05-08T10:33:54.696Z",
+      "updatedAt": "2026-05-08T10:43:05.731Z"
+    },
+    "remotion-render": {
+      "source": "qu-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/qu-skills/skills.git",
+      "skillPath": "tools/video/remotion-render/SKILL.md",
+      "skillFolderHash": "7c7d866e1b2a2624a978007a465d255982c85421",
+      "installedAt": "2026-05-08T10:33:54.698Z",
+      "updatedAt": "2026-06-06T19:29:21.033Z"
+    },
+    "seedance": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "tools/video/seedance/SKILL.md",
+      "skillFolderHash": "d5676383a1da44447ecb52005c483dee3f264b331a50e3af4bdfec3ca61bd04c",
+      "installedAt": "2026-05-08T10:33:54.700Z",
+      "updatedAt": "2026-05-08T10:43:05.744Z"
+    },
+    "agent-ui": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "ui/agent-ui/SKILL.md",
+      "skillFolderHash": "e3dfd99e9ac5ab83ee4e841a5419224352a16cadc45f4f09202c499ce865515d",
+      "installedAt": "2026-05-08T10:33:54.703Z",
+      "updatedAt": "2026-05-08T10:43:05.748Z"
+    },
+    "chat-ui": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "ui/chat-ui/SKILL.md",
+      "skillFolderHash": "f28ca5f4c57a8c587305d8ac7f090f4f8dd1723b403e126a95677606a4dc9572",
+      "installedAt": "2026-05-08T10:33:54.705Z",
+      "updatedAt": "2026-05-08T10:43:05.758Z"
+    },
+    "tools-ui": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "ui/tools-ui/SKILL.md",
+      "skillFolderHash": "2ffc2a0308ea205bc42a2a3db61910e6a4a859823c7aa0ef494518eb15896614",
+      "installedAt": "2026-05-08T10:33:54.707Z",
+      "updatedAt": "2026-05-08T10:43:05.767Z"
+    },
+    "widgets-ui": {
+      "source": "inference-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/inference-skills/skills.git",
+      "skillPath": "ui/widgets-ui/SKILL.md",
+      "skillFolderHash": "38fb10fedd53b3f0981dddbaff25b1111ffeef4f772b60eb001890498c98c5a8",
+      "installedAt": "2026-05-08T10:33:54.710Z",
+      "updatedAt": "2026-05-08T10:43:05.772Z"
+    },
+    "firebase-data-connect": {
+      "source": "firebase/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/firebase/agent-skills.git",
+      "skillPath": "skills/firebase-data-connect-basics/SKILL.md",
+      "skillFolderHash": "506bd68146e316f296df2dd02d90aa90542584b6b131f4003447d7716155dcdd",
+      "installedAt": "2026-05-09T11:29:57.159Z",
+      "updatedAt": "2026-05-09T11:29:57.159Z"
+    },
+    "ui-ux-pro-max": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+      "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "skillFolderHash": "75e1acaafe8b08e59d4b86fc253ac7873aff6bba",
+      "pluginName": "ui-ux-pro-max",
+      "installedAt": "2026-05-09T12:04:17.747Z",
+      "updatedAt": "2026-05-09T12:04:17.747Z"
+    },
+    "brainstorming": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "skillPath": "skills/brainstorming/SKILL.md",
+      "skillFolderHash": "f260c775073816860fef8a37c032ac77e2ff5821",
+      "installedAt": "2026-06-13T14:12:07.999Z",
+      "updatedAt": "2026-06-13T14:12:07.999Z"
+    },
+    "product-brainstorming": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/knowledge-work-plugins.git",
+      "skillPath": "product-management/skills/product-brainstorming/SKILL.md",
+      "skillFolderHash": "87927826dc1b27c4c9e84b88be10f3dc383a3e4b",
+      "installedAt": "2026-06-13T14:12:25.999Z",
+      "updatedAt": "2026-06-13T14:12:25.999Z"
+    },
+    "industrial-brutalist-ui": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/leonxlnx/taste-skill.git",
+      "skillPath": "skills/brutalist-skill/SKILL.md",
+      "skillFolderHash": "f812ede7e5c34cf680f629911e9f9ac05e416cf4",
+      "installedAt": "2026-06-13T14:14:29.781Z",
+      "updatedAt": "2026-06-13T14:14:29.781Z"
+    },
+    "minimalist-ui": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/leonxlnx/taste-skill.git",
+      "skillPath": "skills/minimalist-skill/SKILL.md",
+      "skillFolderHash": "5509c012862cda27e2ed7efae89ed940ecc53add",
+      "installedAt": "2026-06-13T14:14:43.505Z",
+      "updatedAt": "2026-06-13T14:14:43.505Z"
+    },
+    "building-components": {
+      "source": "vercel/components.build",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/components.build.git",
+      "skillPath": "skills/building-components/SKILL.md",
+      "skillFolderHash": "b7f8c5d9010b2f8cd1b4c9f250886264d5ce6d15",
+      "installedAt": "2026-06-23T07:22:03.247Z",
+      "updatedAt": "2026-06-23T07:22:03.247Z"
+    },
+    "ucp": {
+      "source": "vercel-labs/agentic-commerce-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agentic-commerce-skills.git",
+      "skillPath": "ucp/SKILL.md",
+      "skillFolderHash": "0c4ae51c86c80f16f73840020a30e5c51a6b1360",
+      "installedAt": "2026-06-23T07:22:23.080Z",
+      "updatedAt": "2026-06-23T07:22:23.080Z"
+    },
+    "workflow": {
+      "source": "vercel/workflow",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/workflow.git",
+      "skillPath": "skills/workflow/SKILL.md",
+      "skillFolderHash": "fd04f147f83ffc9a8c193d6d6699d7a1aa1d6575",
+      "installedAt": "2026-06-23T07:22:32.410Z",
+      "updatedAt": "2026-06-23T07:22:32.410Z"
+    },
+    "react-native": {
+      "source": "vercel-labs/json-render",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/json-render.git",
+      "skillPath": "skills/react-native/SKILL.md",
+      "skillFolderHash": "5428d72027a35d709a68ea10400cb7923f397140",
+      "installedAt": "2026-06-23T07:22:58.489Z",
+      "updatedAt": "2026-06-23T07:22:58.489Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "antigravity-cli",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed"
+  ]
+}
