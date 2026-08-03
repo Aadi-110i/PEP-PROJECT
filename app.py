@@ -56,6 +56,28 @@ def api_settings():
         db.close()
         return jsonify({"status": "success"})
 
+@app.route('/api/export')
+def api_export():
+    from flask import Response
+    from core.queries import get_logs
+    df = get_logs(limit=10000)
+    return Response(
+        df.to_csv(index=False),
+        mimetype="text/csv",
+        headers={"Content-disposition": "attachment; filename=traffic_logs.csv"}
+    )
+
+@app.route('/api/clear', methods=['POST'])
+def api_clear():
+    from core.db import SessionLocal, RequestLog, RateLimitEvent, FlaggedEntity
+    db = SessionLocal()
+    db.query(RequestLog).delete()
+    db.query(RateLimitEvent).delete()
+    db.query(FlaggedEntity).delete()
+    db.commit()
+    db.close()
+    return jsonify({"status": "success"})
+
 @app.route('/api/seed', methods=['POST'])
 def api_seed():
     from core.log_generator import generate_synthetic_logs

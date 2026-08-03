@@ -46,17 +46,37 @@ async function fetchOverviewData() {
         data: {
             labels: labels,
             datasets: [
-                { label: 'Allowed', data: allowed, borderColor: '#00D9FF', backgroundColor: 'rgba(0, 217, 255, 0.1)', fill: true, tension: 0.4 },
-                { label: 'Blocked', data: blocked, borderColor: '#FF4B5C', backgroundColor: 'rgba(255, 75, 92, 0.1)', fill: true, tension: 0.4 }
+                { 
+                    label: 'Allowed', 
+                    data: allowed, 
+                    borderColor: '#A79F99', // Warm gray
+                    backgroundColor: 'rgba(167, 159, 153, 0.15)', 
+                    fill: true, 
+                    tension: 0.4 
+                },
+                { 
+                    label: 'Blocked', 
+                    data: blocked, 
+                    borderColor: '#5C3A2E', // Mocha brown
+                    backgroundColor: 'rgba(92, 58, 46, 0.15)', 
+                    fill: true, 
+                    tension: 0.4 
+                }
             ]
         },
         options: {
             responsive: true,
             scales: {
-                x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
-                y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } }
+                x: { 
+                    grid: { color: '#575453' }, 
+                    ticks: { color: '#A79F99' } 
+                },
+                y: { 
+                    grid: { color: '#575453' }, 
+                    ticks: { color: '#A79F99' } 
+                }
             },
-            plugins: { legend: { labels: { color: '#f8fafc', font: {family: 'Inter'} } } }
+            plugins: { legend: { labels: { color: '#D0C8C1', font: {family: 'Inter'} } } }
         }
     });
 }
@@ -135,6 +155,23 @@ document.getElementById('seedBtn').addEventListener('click', async () => {
     btn.disabled = false;
     
     fetchOverviewData();
+});
+
+document.getElementById('exportCsvBtn').addEventListener('click', () => {
+    window.open('/api/export', '_blank');
+});
+
+document.getElementById('clearDbBtn').addEventListener('click', async () => {
+    if(confirm("Are you sure you want to clear all data? This cannot be undone.")) {
+        const btn = document.getElementById('clearDbBtn');
+        btn.innerText = "Clearing...";
+        await fetch('/api/clear', {method: 'POST'});
+        btn.innerText = "Clear Database";
+        fetchOverviewData();
+        fetchTrafficLogs();
+        fetchAbuseData();
+        alert("Database cleared successfully!");
+    }
 });
 
 // Initial load

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +9,31 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
     <div class="topbar">
         <div class="topbar-logo">
-            <h2>🛡️ SecureAPI</h2>
+            <h2>SecureAPI</h2>
         </div>
-        
+
         <ul class="nav-links">
             <li><a href="#" data-target="view-overview" class="nav-link active">Overview</a></li>
             <li><a href="#" data-target="view-traffic" class="nav-link">Traffic Explorer</a></li>
             <li><a href="#" data-target="view-abuse" class="nav-link">Abuse Detection</a></li>
             <li><a href="#" data-target="view-settings" class="nav-link">Settings</a></li>
         </ul>
-        
+
         <div class="topbar-actions">
             <div class="status">🟢 Active</div>
             <button id="seedBtn" class="btn-primary">Initialize & Seed</button>
         </div>
     </div>
-    
+
     <div class="main-content">
         <!-- View 1: Overview -->
         <div id="view-overview" class="view active">
             <h1>API Abuse & Rate Limiting Dashboard</h1>
-            
+
             <div class="kpi-grid">
                 <div class="kpi-card">
                     <div class="kpi-label">Total Requests (24h)</div>
@@ -59,7 +61,10 @@
 
         <!-- View 2: Traffic Explorer -->
         <div id="view-traffic" class="view">
-            <h1>Traffic Explorer</h1>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h1 style="margin-bottom:0;">Traffic Explorer</h1>
+                <button id="exportCsvBtn" class="btn-primary">Export as CSV</button>
+            </div>
             <div class="table-container">
                 <table id="logsTable">
                     <thead>
@@ -80,7 +85,7 @@
         <div id="view-abuse" class="view">
             <h1>Abuse Detection</h1>
             <div class="table-container">
-                <h2>🚨 Flagged Abusers</h2>
+                <h2>Flagged Abusers</h2>
                 <table id="abuseTable">
                     <thead>
                         <tr>
@@ -104,7 +109,12 @@
                     <label>Max Requests Per Minute (RPM)</label>
                     <input type="number" id="rpmInput" value="60">
                 </div>
-                <button id="saveSettingsBtn" class="btn-primary" style="margin-top:20px; width:100%;">Save Changes</button>
+                <button id="saveSettingsBtn" class="btn-primary" style="margin-top:20px; width:100%;">Save
+                    Changes</button>
+                <hr style="margin: 30px 0; border: none; border-top: 1px solid #D0C8C1;">
+                <h2>System Maintenance</h2>
+                <p style="margin-bottom: 15px; color: #7A7675;">Purge all logs and flagged abusers from the database.</p>
+                <button id="clearDbBtn" class="btn-primary" style="background: #BD4444; width:100%;">Clear Database</button>
             </div>
         </div>
 
@@ -112,4 +122,5 @@
 
     <script src="/static/js/script.js"></script>
 </body>
+
 </html>
