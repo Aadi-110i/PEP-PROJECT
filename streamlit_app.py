@@ -141,23 +141,23 @@ with col1:
 
 with col2:
     st.metric(
-        label="🚩 Flagged Entities",
-        value=f"{safe_metric(metrics.get('flagged_entities'), 0):,}",
+        label="🔴 Blocked %",
+        value=f"{safe_metric(metrics.get('blocked_pct'), 0):.1f}%",
         delta=None
     )
 
 with col3:
     st.metric(
-        label="⏱️ Rate Limited",
-        value=f"{safe_metric(metrics.get('rate_limited'), 0):,}",
+        label="⚡ Avg Response (ms)",
+        value=f"{safe_metric(metrics.get('avg_response_time'), 0):.0f}",
         delta=None
     )
 
 with col4:
-    avg_score = safe_metric(metrics.get('avg_abuse_score'), 0)
+    active = safe_metric(metrics.get('active_threats'), 0)
     st.metric(
-        label="📈 Avg Abuse Score",
-        value=f"{avg_score:.2f}",
+        label="🚨 Active Threats",
+        value=f"{active:,}",
         delta=None
     )
 
@@ -174,27 +174,40 @@ with col_left:
         # Create time series chart with plotly
         fig = go.Figure()
 
-        # Normal traffic
-        normal = df_traffic[df_traffic.get('is_abuse', 0) == 0]
+        # Normal traffic (allowed)
+        normal = df_traffic[df_traffic['decision'] == 'allowed']
         if not normal.empty:
             fig.add_trace(go.Scatter(
-                x=normal['time_bucket'],
-                y=normal['request_count'],
+                x=normal['minute'],
+                y=normal['count'],
                 mode='lines',
-                name='Normal Traffic',
+                name='Allowed',
                 line=dict(color='#2ca02c', width=2),
                 fill='tozeroy',
                 fillcolor='rgba(44, 160, 44, 0.1)'
             ))
 
-        # Abuse traffic
-        abuse = df_traffic[df_traffic.get('is_abuse', 0) == 1]
-        if not abuse.empty:
+        # Throttled traffic
+        throttled = df_traffic[df_traffic['decision'] == 'throttled']
+        if not throttled.empty:
             fig.add_trace(go.Scatter(
-                x=abuse['time_bucket'],
-                y=abuse['request_count'],
+                x=throttled['minute'],
+                y=throttled['count'],
                 mode='lines',
-                name='Abuse Traffic',
+                name='Throttled',
+                line=dict(color='#ff7f0e', width=2),
+                fill='tozeroy',
+                fillcolor='rgba(255, 127, 14, 0.1)'
+            ))
+
+        # Blocked traffic
+        blocked = df_traffic[df_traffic['decision'] == 'blocked']
+        if not blocked.empty:
+            fig.add_trace(go.Scatter(
+                x=blocked['minute'],
+                y=blocked['count'],
+                mode='lines',
+                name='Blocked',
                 line=dict(color='#d62728', width=2),
                 fill='tozeroy',
                 fillcolor='rgba(214, 39, 40, 0.1)'
@@ -218,27 +231,25 @@ with col_right:
     df_flagged = get_flagged_entities()
 
     if not df_flagged.empty:
-        # Show as styled dataframe
-        display_cols = ['ip', 'total_requests', 'flagged_requests', 'abuse_score', 'is_blocked']
+        # Show as styled dataframe - columns from flagged_entities table
+        display_cols = ['entity_value', 'entity_type', 'abuse_score', 'risk_tier', 'reason']
         available_cols = [c for c in display_cols if c in df_flagged.columns]
 
         if available_cols:
             styled_df = df_flagged[available_cols].head(10).copy()
             if 'abuse_score' in styled_df.columns:
-                styled_df['abuse_score'] = styled_df['abuse_score'].apply(lambda x: f"{x:.2f}")
-            if 'is_blocked' in styled_df.columns:
-                styled_df['is_blocked'] = styled_df['is_blocked'].apply(lambda x: "🔴 Blocked" if x else "🟢 Active")
+                styled_df['abuse_score'] = styled_df['abuse_score'].apply(lambda x: f"{x:.1f}")
 
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "ip": "IP Address",
-                    "total_requests": "Total Reqs",
-                    "flagged_requests": "Flagged",
+                    "entity_value": "IP / API Key",
+                    "entity_type": "Type",
                     "abuse_score": "Abuse Score",
-                    "is_blocked": "Status"
+                    "risk_tier": "Risk Tier",
+                    "reason": "Reason"
                 }
             )
     else:
@@ -250,7 +261,7 @@ df_logs = get_logs(limit=50)
 
 if not df_logs.empty:
     # Add color coding for status
-    display_cols = ['timestamp', 'ip', 'endpoint', 'method', 'status_code', 'is_abuse', 'is_rate_limited']
+    display_cols = ['timestamp', 'ip_address', 'endpoint', 'method', 'status_code', 'decision']
     available_cols = [c for c in display_cols if c in df_logs.columns]
 
     if available_cols:
@@ -259,10 +270,10 @@ if not df_logs.empty:
         # Format columns
         if 'timestamp' in styled_logs.columns:
             styled_logs['timestamp'] = pd.to_datetime(styled_logs['timestamp']).dt.strftime('%H:%M:%S')
-        if 'is_abuse' in styled_logs.columns:
-            styled_logs['is_abuse'] = styled_logs['is_abuse'].apply(lambda x: "🚩" if x else "")
-        if 'is_rate_limited' in styled_logs.columns:
-            styled_logs['is_rate_limited'] = styled_logs['is_rate_limited'].apply(lambda x: "⏱️" if x else "")
+        if 'decision' in styled_logs.columns:
+            styled_logs['decision'] = styled_logs['decision'].apply(
+                lambda x: "✅ Allowed" if x == 'allowed' else ("⏱️ Throttled" if x == 'throttled' else "🔴 Blocked")
+            )
         if 'status_code' in styled_logs.columns:
             styled_logs['status_code'] = styled_logs['status_code'].astype(str)
 
@@ -272,12 +283,11 @@ if not df_logs.empty:
             hide_index=True,
             column_config={
                 "timestamp": "Time",
-                "ip": "IP Address",
+                "ip_address": "IP Address",
                 "endpoint": "Endpoint",
                 "method": "Method",
                 "status_code": "Status",
-                "is_abuse": "Abuse",
-                "is_rate_limited": "Rate Ltd"
+                "decision": "Decision"
             }
         )
 else:
