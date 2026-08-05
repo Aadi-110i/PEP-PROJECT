@@ -48,14 +48,26 @@ class RulesConfig(Base):
     window_seconds = Column(Integer)
     is_active = Column(Boolean, default=True)
 
-# Set up SQLite database
-DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'api_logs.db')
-engine = create_engine(f'sqlite:///{DB_PATH}', echo=False)
+# Set up SQLite database - use env var for cloud deployment, fallback to local path
+def get_database_url():
+    # Check for environment variable (for Streamlit Cloud, etc.)
+    db_url = os.environ.get('DATABASE_URL')
+    if db_url:
+        return db_url
+
+    # Local development: use data/api_logs.db relative to project root
+    project_root = os.path.dirname(os.path.dirname(__file__))
+    data_dir = os.path.join(project_root, 'data')
+    os.makedirs(data_dir, exist_ok=True)  # Ensure directory exists
+    db_path = os.path.join(data_dir, 'api_logs.db')
+    return f'sqlite:///{db_path}'
+
+engine = create_engine(get_database_url(), echo=False, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 def init_db():
     Base.metadata.create_all(bind=engine)
-    
+
 def get_db():
     db = SessionLocal()
     try:
